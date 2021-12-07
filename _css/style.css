@@ -6,3 +6,21 @@ h2 {
     font-size: 0.875rem;
 
 }
+
+header {
+    font-weight: 800;
+}
+
+p {
+    text-align: justify;
+}
+
+section > figure {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 10;
+    margin: 10px 0;    
+}
