@@ -1,24 +1,75 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <link href="_css/style.css" type="text/css" rel="stylesheet">
+        <link
+        href="_css/style.css"
+        type="text/css"
+        rel="stylesheet">
         <title>Documentação HTML</title>
     </head>
     <body>
         <nav id="navbar">
             <header>Documentação HTML</header>
             <ul>
-                <li><a class="nav-link" href="#Conceito">Conceito</a></li>
-                <li><a class="nav-link" href="#História_do_HTML">História do HTML</a></li>
-                <li><a class="nav-link" href="#Marcas_(tags)">Marcas (tags)</a></li>
-                <li><a class="nav-link" href="#Edição_de_documentos_HTML">Edição de documentos HTML</a></li>
-                <li><a class="nav-link" href="#Estrutura_básica_de_um_documento">Estrutura básica de um documento</a></li>
-                <li><a class="nav-link" href="#Cores">Cores</a></li>
-                <li><a class="nav-link" href="#Hiperligações">Hiperligações</a></li>
-                <li><a class="nav-link" href="#Caracteres_especiais_e_símbolos">Caracteres especiais e símbolos</a></li>
-                <li><a class="nav-link" href="#Ver_também">Ver também</a></li>
-                <li><a class="nav-link" href="#Referências">Referências</a></li>
-                <li><a class="nav-link" href="#Ligações_externas">Ligações externas</a></li>
+                <li>
+                    <a class="nav-link"
+                    href="#Conceito">Conceito
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="#História_do_HTML">História do HTML
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="#Marcas_(tags)">Marcas (tags)
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="#Edição_de_documentos_HTML">Edição de documentos HTML
+                    </a>
+                </li>
+                <li>
+                    <a
+                    class="nav-link"
+                    href="#Estrutura_básica_de_um_documento">Estrutura básica de um documento
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="#Cores">Cores
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="#Hiperligações">Hiperligações
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link"
+                    href="#Caracteres_especiais_e_símbolos">Caracteres especiais e símbolos
+                    </a>
+                </li>
+                <li>
+                    <a
+                    class="nav-link"
+                    href="#Ver_também">Ver também
+                    </a>
+                </li>
+                <li>
+                    <a
+                    class="nav-link"
+                    href="#Referências">Referências
+                    </a>
+                </li>
+                <li>
+                    <a
+                    class="nav-link"
+                    href="#Ligações_externas">Ligações externas
+                    </a>
+                </li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -57,22 +108,175 @@
             <section class="main-section" id="Marcas_(tags)">
                 <header>Marcas (tags)</header>
                     <article>
+                        <p>Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (<code><</code> e <code>></code>); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança.
+                        <p>Exemplo de um elemento simples (não possui filhos):</p>
+                        <code>< hr/></code>
+                        <p>Exemplo de um elemento composto (possui filhos):</p>
+                        <code>< a href="http://pt.wikipedia.org/">Wikipédia< /a></code>
+                        <ul>
+                            <li>
+                                <code>< a></code> é o marcador de abertura
+                            </li>
+                            <li>
+                                <code>< /a></code> é o marcador de fechamento
+                            </li>
+                            <li>
+                                <code>href</code> é o atributo onde é definido a url, que será acessada ao clicar no link.
+                            </li>
+                        </ul>
+                    <p>Outro exemplo de elemento composto (possui filhos):</p>
+                    <code>< a href="http://pt.wikipedia.org" target="_self">< p>Wikipédia< /p>< /a></code>
+                    <ul>
+                        <li>
+                            <code>p</code> = marcador que define um parágrafo.
+                        </li>
+                        <li>
+                            <code>a</code> = marcador que define uma hiperligação.
+                        </li>
+                        <li>
+                            <code>href</code> = atributo que define a url da hiperligação.
+                        </li>
+                        <li>
+                            <code>target</code> = atributo que define a forma como a hiperligação será aberta.
+                        </li>
+                        <li>
+                            <code>=</code> valor do atributo Target que define que a hiperligação será aberta na mesma guia.
+                        </li>
+                        <li>
+                            <code>/</code> = define o fechamento do elemento
+                        </li>
+                    </ul>
+                    <p>Isso é necessário porque os marcadores servem para definir a formatação de uma porção do documento, e assim marcamos onde começa e termina o conteúdo que receberá a formatação ou marcação necessária, específica. Alguns elementos são chamados “vazios”, pois não marcam uma região de texto, apenas inserem algum elemento no documento.</p>
+
+                    <p>Cada elemento tem os seus atributos possíveis e os seus valores. Um exemplo, é o atributo <code>href</code> que pode ser usado com o elemento <code>a</code>, com o <code>link</code> mas que não pode ser usado com o elemento <code>meta</code>. Isso quer dizer que devemos saber exatamente quais os atributos e valores possíveis para cada elemento.</p>
+
+                    <p>De uma maneira geral o HTML é um poderoso recurso, sendo uma linguagem de marcação muito simples e acessível voltada para a produção e compartilhamento de documentos, imagens, vídeos e áudio via streaming.</p>
+
+                    <p>Na sua versão mais recente, o <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank">HTML5</a>, é possível criar marcadores personalizados com <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>, linguagem de programação diretamente compatível com o HTML. Cada tag pode ter uma função específica utilizando uma <a href="https://pt.wikipedia.org/wiki/Interface_de_programa%C3%A7%C3%A3o_de_aplica%C3%A7%C3%B5es" target="_blank">API</a> (Interface de programação de aplicações) diferente, assim como seus nomes e estilos.</p>
                     </article>
             </section>
             <section class="main-section"  id="Edição_de_documentos_HTML">
                 <header>Edição de documentos HTML</header>
                     <article>
+                        <p>Os documentos em HTML são arquivos de texto simples que podem ser criados e editados em qualquer editor de textos comum, como o <a href="https://pt.wikipedia.org/wiki/Bloco_de_Notas" target="_blank">Bloco de Notas</a> do <a href="https://pt.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Windows</a>, ou o <a href="https://pt.wikipedia.org/wiki/TextEdit" target="_blank">TextEdit</a>, do <a href="https://pt.wikipedia.org/wiki/Macintosh" target="_blank">Macintosh</a>. Para facilitar a produção de documentos, no mercado existem editores HTML específicos, com recursos sofisticados, que facilitam a realização de tarefas repetitivas, inserção de objetos, elaboração de tabelas e outros recursos (Ver lista abaixo). Basicamente dividem-se em dois tipos: </p>
+                        <ul>
+                            <li>
+                                Editores de texto fonte: inserem automaticamente os marcadores, orientando a inserção de atributos e marcações
+                            </li>
+                            <li>
+                                Editores <a href="https://pt.wikipedia.org/wiki/WYSIWYG" target="_blank">WYSIWYG</a>: oferecem ambiente de edição com um "esboço" resultado final das marcações
+                            </li>
+                        </ul>
                     </article>
             </section>
             <section class="main-section" id="Estrutura_básica_de_um_documento">
                 <header>Estrutura básica de um documento</header>
                     <article>
+                        <p>A estrutura básica de um documento HTML (Hyper Text Markup Language - Linguagem de Marcação de Hypertexto), apresenta as seguintes marcações:</p>
+                        <code>
+                            < !DOCTYPE html><br>
+                            < html lang="pt-br"><br>
+                                < head><br>
+                                    < meta charset="utf-8" /><br>
+                                    < meta name="description" content="a descrição do seu site em no máximo 90 caracteres"><br>
+                                    < meta name="keywords" content="escreva palavras-chaves curtas, máximo 150 caracteres"><br>
+                                    < title>Título do Documento</ title><br>
+                                </ head><br>
+                                < body><br>
+                                < !-- Aqui fica a página que será visível para todos, onde pode-se inserir
+                                textos, imagens, links para outras páginas, etc, geralmente usa-se: --><br>
+                            
+                                < div>
+                                    Tag para criar-se uma 'caixa', um bloco, mais utilizada com "Cascading Style Sheets
+                                     (Folhas de Estilo em Cascata)
+                                < /div><br>
+                            
+                                < span>Tag para modificação de uma parte do texto da página< /span><br>
+                            
+                                < img src="endereço_de_uma_imagem.jpg" /><br>
+                            
+                                < a href="http://www.wikipedia.org">Wikipedia, A Enciclopédia Livre< /a><br>
+                                < /body><br>
+                            </ html><br>
+                        </code>
+                        <p>Os marcadores HTML não são <a href="https://pt.wikipedia.org/wiki/Case-sensitive" target="_blank">sensíveis à caixa</a>, portanto tanto faz escrever <code>< HTML></code>, <code>< Html></code>, <code>< html></code> ou <code>< HtMl></code>.</p>
+                        <p>Os marcadores básicos de HTML, cuja presença é altamente recomendada nas páginas são: </p>
+                        <p>Os marcadores básicos de HTML, cuja presença é altamente recomendada nas páginas são: </p>
+                        <ul>
+                            <li>
+                                <code>< html></code>: define o início de um documento HTML e indica ao navegador que todo conteúdo posterior deve ser tratado como uma série de códigos HTML
+                            </li>
+                            <li>
+                                <code>< head></code>: define o cabeçalho de um documento HTML, que traz informações sobre o documento que está sendo aberto
+                            </li>
+                            <li>
+                                <code>< body></code>: define o conteúdo principal, o corpo do documento. Esta é a parte do documento HTML que é exibida no navegador. No corpo podem-se definir atributos comuns a toda a página, como cor de fundo, margens, e outras formatações.
+                            </li>
+                        </ul>
                     </article>
                     <article>
                         <h2>Cabeçalho</h2>
+                        <p>Dentro do cabeçalho podemos encontrar os seguintes elementos:</p>
+                        <ul>
+                            <li>
+                                <code>< title></code>: define o título da página, que é exibido na barra de título dos navegadores
+                            </li>
+                            <li>
+                                <code>< style type="text/css"></code>: define formatação em CSS.
+                            </li>
+                            <li>
+                                <code>< script type="text/javascript"></code>: define programação de certas funções em página com <a href="https://pt.wikipedia.org/wiki/Linguagem_interpretada" target="_blank">scripts</a>, podendo adicionar funções de <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></li>
+                            <li>
+                                <code>< link></code>: define ligações da página com outros arquivos como <a href="https://pt.wikipedia.org/wiki/Feed" target="_blank">feeds</a>, <a href="https://pt.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS</a>, scripts, etc
+                            </li>
+                            <li>
+                                <code>< meta></code>: define propriedades da página, como codificação de caracteres, descrição da página, autor, etc
+                            </li>
+                        </ul>
+                        <p>São meta informações sobre documento. Tais campos são muito usados por mecanismos de busca (como o Google, Yahoo!, Bing) para obterem mais informações sobre o documento, a fim de classificá-lo melhor. Por exemplo, pode-se adicionar o código <code>< meta name="description" content="descrição da sua página" /></code> no documento HTML para indicar ao motor de busca que texto de descrição apresentar junto com a ligação para o documento. Para o motor de busca Google, por exemplo, elementos <code><em>meta</em></code> como keywords não são utilizadas para indexar páginas. Apenas <code>< title></code> e a meta <code>< description></code> são usadas para descrever a página indexada.</p>
+                        <p>Obs: Os marcadores <code><b>< style></b></code> e <code><b>< script></b></code> servem tanto para delimitar os espaços usados pelos códigos na página quanto para invocar códigos existentes em outros arquivos externos. </p>
                     </article>
                     <article>
                         <h2>Corpo</h2>
+                        <p>Dentro do corpo podemos encontrar outros vários marcadores que irão moldar a página, como por exemplo:</p>
+                        <ul>
+                            <li>
+                                <code>< h1></code>, <code>< h2></code>, ... <code>< h6></code>: Títulos que variam de tamanho dentro das prioridades (sua aparência pode ser alterada com CSS - Cascade Style Sheet - Folhas de Estilo em Cascata).
+                            </li>
+                            <li>
+                                <code>< p></code>: Parágrafo.
+                            </li>
+                            <li>
+                                <code>< br/></code>: quebra de linha.
+                            </li>
+                            <li>
+                                <code>< table></code>: cria uma tabela (linhas são criadas com <code>< TR></code> e novas células com <code>< TD></code>, já os cabeçalhos das colunas são criados com os marcadores <code>< THead></code><code>< TH></code> e os rodapés com <code>< TFooter></code> <code>< TR></code> <code>< TD></code>).
+                            </li>
+                            <li>
+                                <code>< div></code>: determina uma divisão na página a qual pode possuir variadas formatações.
+                            </li>
+                            <li>
+                                <code>< b></code>, <code>< i></code>, <code>< u></code> e <code>< s></code>: negrito, itálico, sublinhado e riscado, respectivamente.
+                            </li>
+                            <li>
+                                <code>< img /></code>: imagem.
+                            </li>
+                            <li>
+                                <code>< a></code>: hiper-ligação para um outro local, seja uma página, um e-mail ou outro serviço.
+                            </li>
+                            <li>
+                                <code>< textarea></code>: caixa de texto (com mais de uma linha); estas caixas de texto são muito usadas em blogs, elas podem ser auto selecionáveis e conter outros códigos a serem distribuídos.
+                            </li>
+                            <li>
+                                <code>< abbr></code>: abreviação (sigla simplesmente abreviada).
+                            </li>
+                            <li>
+                                <code>< cite></code>: citação.
+                            </li>
+                            <li>
+                                <code>< address></code>:Endereço.
+                            </li>                            
+                        </ul>
                     </article>
             </section>
             <section class="main-section" id="Cores">
