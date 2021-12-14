@@ -9,14 +9,26 @@ h2 {
     font-size: 1rem;
 }
 
-header {
+header {    
+    text-align: center;
+    display: grid;
+    align-items: center;
     font-size: 1.125rem;
     font-weight: 800;
     border-bottom: 1px solid rgb(162, 169, 177);
+    margin: 10px;
 }
 
 p {
     text-align: justify;
+}
+
+#main-doc {
+    position: relative;
+    top: 0px;
+    margin-left: 320px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 ul > li {
@@ -28,6 +40,7 @@ ul > li {
 section > figure {
     max-width: 100%;
     height: auto;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -47,4 +60,22 @@ code {
     border-radius: 3px;
     font-family: courier, monospace;
     padding: 0 3px;    
+}
+
+/* navbar */
+
+#navbar {
+    position: fixed;
+    min-width: 300px;
+    top: 0;
+    left: 0;    
+    border-right: solid;
+    border-color: rgb(102, 100, 100);
+}
+
+.nav-link {
+    color:  rgb(43, 40, 40);
+    border-top: 1px solid;     
+    width: 100%;
+    padding: 0px 0;
 }
